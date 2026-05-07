@@ -95,7 +95,7 @@
 </head>
 <body class="text-gray-800 antialiased relative">
 
-    <!-- Loading Screen (Meniru Video) -->
+    <!-- Loading Screen -->
     <div id="loader" class="fixed inset-0 z-[100] bg-gradient-to-br from-yellow-400 to-brand-orange flex flex-col items-center justify-center transition-opacity duration-700 ease-in-out">
         <div class="bg-white p-6 rounded-full mb-6 shadow-lg animate-bounce relative">
             <i class="fas fa-leaf text-6xl text-brand-500"></i>
@@ -104,7 +104,7 @@
         <h2 class="text-4xl font-black text-white mb-3">Kebun Ibu</h2>
         <div class="flex flex-col items-center text-white/90 font-medium">
             <div class="flex items-center mb-4 text-lg">
-                <i class="fas fa-circle-notch fa-spin mr-3"></i> Memuat halaman...
+                <i class="fas fa-circle-notch fa-spin mr-3"></i> Menyambungkan ke kebun...
             </div>
             <div class="w-64 h-2 bg-white/30 rounded-full overflow-hidden">
                 <div class="w-1/2 h-full bg-white rounded-full animate-pulse"></div>
@@ -116,15 +116,13 @@
     <!-- Navbar Mengambang Ala Sampedia -->
     <nav class="fixed top-6 w-full z-50 flex justify-center px-4 pointer-events-none">
         <div class="bg-white/95 backdrop-blur-md rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 flex items-center p-2 pointer-events-auto">
-            <!-- Logo -->
-            <div class="flex items-center gap-3 pr-6 pl-3 border-r border-gray-200 cursor-pointer">
+            <div class="flex items-center gap-3 pr-6 pl-3 border-r border-gray-200 cursor-pointer" onclick="window.scrollTo(0,0)">
                 <div class="bg-yellow-500 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm">
                     <i class="fas fa-leaf"></i>
                 </div>
                 <span class="font-extrabold text-xl text-yellow-600 tracking-tight">Kebun Ibu</span>
             </div>
             
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center gap-1 px-4 border-r border-gray-200 font-bold text-gray-600 text-sm tracking-wide">
                 <a href="#" class="px-4 py-2.5 rounded-full hover:bg-gray-50 transition flex items-center text-gray-600"><i class="fas fa-home mr-2 text-gray-400 text-lg"></i> Beranda</a>
                 <a href="#belajar" class="bg-yellow-100 text-yellow-600 px-4 py-2.5 rounded-full transition flex items-center"><i class="fas fa-book-open mr-2 text-lg"></i> Belajar</a>
@@ -132,14 +130,12 @@
                 <a href="#jadwal" class="px-4 py-2.5 rounded-full hover:bg-gray-50 transition flex items-center text-gray-600"><i class="fas fa-calendar-alt mr-2 text-gray-400 text-lg"></i> Jadwal Tanam</a>
             </div>
 
-            <!-- CTA Button -->
             <div class="pl-4 pr-2 hidden md:block">
                 <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold px-6 py-2.5 rounded-full transition shadow-md">
                     Tanya Ahli
                 </button>
             </div>
 
-            <!-- Mobile Menu Button -->
             <div class="lg:hidden px-4 pl-6">
                 <button class="text-gray-500 hover:text-yellow-600 focus:outline-none text-2xl">
                     <i class="fas fa-bars"></i>
@@ -148,9 +144,8 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION - PLAYFUL REDESIGN -->
+    <!-- HERO SECTION -->
     <section class="relative pt-32 pb-40 overflow-hidden bg-gradient-to-b from-green-50 via-yellow-50 to-orange-50">
-        
         <!-- Floating Playful Decorations -->
         <div class="absolute top-24 left-10 md:left-20 text-6xl animate-float opacity-90 select-none drop-shadow-md transform -rotate-12">🥕</div>
         <div class="absolute top-32 right-10 md:right-32 text-7xl animate-float-delayed opacity-90 select-none drop-shadow-lg transform rotate-12">🍅</div>
@@ -163,8 +158,6 @@
 
         <!-- Main Content -->
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-10">
-            
-            <!-- Playful Badge -->
             <div class="inline-block animate-wiggle mb-6">
                 <span class="bg-white border-2 border-brand-500 text-brand-600 font-extrabold px-6 py-2 rounded-full text-lg shadow-[4px_4px_0_#22c55e] inline-flex items-center">
                     <span class="text-2xl mr-2">👩‍🌾</span> Halo Ibu Keren!
@@ -182,15 +175,14 @@
                 Belajar menanam sayur di rumah itu <span class="text-brand-orange">gampang</span> dan <span class="text-brand-yellow drop-shadow-md">menyenangkan!</span> Yuk, pilih bibit pertamamu hari ini.
             </p>
             
-            <!-- Playful 3D Buttons -->
             <div class="flex flex-col sm:flex-row justify-center gap-6 items-center">
                 <a href="#belajar" class="btn-3d bg-brand-500 text-white font-black px-10 py-5 rounded-full text-xl shadow-[0_8px_0_#15803d] border-2 border-brand-700 w-full sm:w-auto flex items-center justify-center group">
                     Mulai Menanam 
                     <span class="ml-3 bg-white/20 rounded-full p-2 group-hover:scale-110 transition"><i class="fas fa-seedling"></i></span>
                 </a>
-                <button class="btn-3d bg-white text-gray-800 font-black px-10 py-5 rounded-full text-xl shadow-[0_8px_0_#e2e8f0] border-2 border-gray-200 w-full sm:w-auto hover:bg-gray-50 flex items-center justify-center">
+                <a href="#jadwal" class="btn-3d bg-white text-gray-800 font-black px-10 py-5 rounded-full text-xl shadow-[0_8px_0_#e2e8f0] border-2 border-gray-200 w-full sm:w-auto hover:bg-gray-50 flex items-center justify-center">
                     Lihat Panen 🧺
-                </button>
+                </a>
             </div>
         </div>
         
@@ -202,17 +194,15 @@
         </div>
     </section>
 
-    <!-- Bento Grid Section -->
+    <!-- Bento Grid Section (BELAJAR) -->
     <section id="belajar" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Pilih Sayuran Favorit Ibu</h2>
             <div class="w-24 h-2 bg-brand-yellow rounded-full mx-auto"></div>
         </div>
 
-        <!-- THE BENTO GRID -->
         <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
-            
-            <!-- Card 1: Cabai (Large - 2 cols, 2 rows) -->
+            <!-- Card 1: Cabai -->
             <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-[2.5rem] shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer bento-hover group border-4 border-white" onclick="openPlantModal('cabai')">
                 <img src="https://images.unsplash.com/photo-1588252303782-cb80119baade?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabai" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
@@ -220,9 +210,7 @@
                     Paling Laris 🔥
                 </div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                    <div class="bg-white/20 backdrop-blur-md w-16 h-16 rounded-3xl flex items-center justify-center text-white text-3xl border-2 border-white/50 mb-4 transform group-hover:rotate-12 transition duration-300">
-                        🌶️
-                    </div>
+                    <div class="bg-white/20 backdrop-blur-md w-16 h-16 rounded-3xl flex items-center justify-center text-white text-3xl border-2 border-white/50 mb-4 transform group-hover:rotate-12 transition duration-300">🌶️</div>
                     <div class="text-white transform transition-transform duration-300 group-hover:translate-y-[-8px]">
                         <h3 class="text-4xl font-black mb-2">Cabai Rawit</h3>
                         <p class="text-gray-100 font-semibold text-lg line-clamp-2 mb-4">Bumbu wajib masakan Nusantara. Sangat mudah ditanam di pot kecil sekalipun.</p>
@@ -233,7 +221,7 @@
                 </div>
             </div>
 
-            <!-- Card 2: Tomat (1 col, 1 row) -->
+            <!-- Card 2: Tomat -->
             <div class="relative overflow-hidden rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bento-hover group bg-orange-100 border-4 border-white" onclick="openPlantModal('tomat')">
                 <img src="https://images.unsplash.com/photo-1592841200221-a6898f307baa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tomat" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -244,7 +232,7 @@
                 </div>
             </div>
 
-            <!-- Card 3: Sawi (1 col, 1 row) -->
+            <!-- Card 3: Sawi -->
             <div class="relative overflow-hidden rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bento-hover group bg-brand-100 border-4 border-white" onclick="openPlantModal('sawi')">
                 <img src="https://images.unsplash.com/photo-1620601931608-d2222a00c8e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sawi" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -255,7 +243,7 @@
                 </div>
             </div>
 
-            <!-- Card 4: Bayam (2 cols, 1 row) -->
+            <!-- Card 4: Bayam -->
             <div class="md:col-span-2 relative overflow-hidden rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bento-hover group bg-green-800 border-4 border-white" onclick="openPlantModal('bayam')">
                 <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bayam" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out opacity-80">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
@@ -265,7 +253,6 @@
                     <p class="text-gray-200 font-semibold text-base leading-relaxed">Sayuran sejuta umat. Sangat menyukai air dan mudah tumbuh dimana saja, sumber zat besi tinggi untuk si kecil.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -279,7 +266,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Olahan 1 -->
             <div class="bg-white rounded-[2.5rem] p-6 shadow-md hover:shadow-xl transition-all border-4 border-gray-50 flex flex-col items-center text-center group">
                 <div class="w-full h-52 rounded-3xl overflow-hidden mb-6 relative">
                     <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sambal Bawang" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
@@ -290,7 +276,6 @@
                 <button class="mt-auto bg-orange-50 text-orange-600 hover:bg-orange-500 hover:text-white font-black w-full py-4 rounded-2xl transition border-2 border-orange-100 hover:border-orange-500">Lihat Resep</button>
             </div>
 
-            <!-- Olahan 2 -->
             <div class="bg-white rounded-[2.5rem] p-6 shadow-md hover:shadow-xl transition-all border-4 border-gray-50 flex flex-col items-center text-center group">
                 <div class="w-full h-52 rounded-3xl overflow-hidden mb-6 relative">
                     <img src="https://images.unsplash.com/photo-1582281240187-25e40eeb2e24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Saus Tomat" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
@@ -301,7 +286,6 @@
                 <button class="mt-auto bg-orange-50 text-orange-600 hover:bg-orange-500 hover:text-white font-black w-full py-4 rounded-2xl transition border-2 border-orange-100 hover:border-orange-500">Lihat Resep</button>
             </div>
 
-            <!-- Olahan 3 -->
             <div class="bg-white rounded-[2.5rem] p-6 shadow-md hover:shadow-xl transition-all border-4 border-gray-50 flex flex-col items-center text-center group">
                 <div class="w-full h-52 rounded-3xl overflow-hidden mb-6 relative">
                     <img src="https://images.unsplash.com/photo-1621852004158-f3bc188aecaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Keripik Bayam" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
@@ -314,10 +298,9 @@
         </div>
     </section>
 
-    <!-- SECTION: JADWAL TANAM -->
+    <!-- SECTION: JADWAL TANAM DENGAN FIREBASE -->
     <section id="jadwal" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 mb-20">
         <div class="bg-brand-50 rounded-[3rem] p-8 md:p-12 shadow-sm border-4 border-brand-200 relative overflow-hidden">
-            <!-- Decorative icon -->
             <div class="absolute -right-10 -top-10 text-brand-200 text-[10rem] opacity-50 transform rotate-12 select-none pointer-events-none"><i class="fas fa-calendar-check"></i></div>
             
             <div class="relative z-10">
@@ -327,66 +310,43 @@
                         <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-2">Jadwal Kebun Ibu 🗓️</h2>
                         <p class="text-lg text-brand-700 font-bold">Jangan sampai terlewat waktu siram dan panennya ya!</p>
                     </div>
-                    <button class="btn-3d bg-brand-500 hover:bg-brand-600 text-white font-black px-6 py-4 rounded-full shadow-[0_6px_0_#15803d] transition-all flex items-center border-2 border-brand-600">
+                    <button onclick="openTaskModal()" class="btn-3d bg-brand-500 hover:bg-brand-600 text-white font-black px-6 py-4 rounded-full shadow-[0_6px_0_#15803d] transition-all flex items-center border-2 border-brand-600">
                         <i class="fas fa-plus mr-2"></i> Tambah Jadwal Baru
                     </button>
                 </div>
 
-                <!-- Schedule Grid (To-Do List Style) -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
-                    <!-- Pagi -->
-                    <div class="bg-white p-6 rounded-3xl shadow-sm border-2 border-gray-100 hover:border-blue-300 transition">
+                    <!-- Box Pagi -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border-2 border-gray-100 transition">
                         <div class="flex items-center justify-between mb-5">
                             <h3 class="font-black text-xl text-blue-500 flex items-center"><i class="fas fa-cloud-sun text-2xl mr-3"></i> Pagi Hari</h3>
                             <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full text-xs">06:00 - 08:00</span>
                         </div>
-                        <ul class="space-y-4">
-                            <li class="flex items-start group cursor-pointer">
-                                <input type="checkbox" class="mt-1 w-6 h-6 text-brand-500 bg-gray-100 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
-                                <span class="ml-3 text-gray-700 font-semibold group-hover:text-brand-600 transition">Siram Cabai Rawit (Pot Biru) 💧</span>
-                            </li>
-                            <li class="flex items-start group cursor-pointer">
-                                <input type="checkbox" class="mt-1 w-6 h-6 text-brand-500 bg-gray-100 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
-                                <span class="ml-3 text-gray-700 font-semibold group-hover:text-brand-600 transition">Semprot daun Sawi dengan air</span>
-                            </li>
+                        <ul id="pagi-list" class="space-y-4">
+                            <li class="text-center text-gray-400 text-sm font-semibold py-4">Memuat jadwal...</li>
                         </ul>
                     </div>
 
-                    <!-- Sore -->
-                    <div class="bg-white p-6 rounded-3xl shadow-sm border-2 border-gray-100 hover:border-orange-300 transition">
+                    <!-- Box Sore -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border-2 border-gray-100 transition">
                         <div class="flex items-center justify-between mb-5">
                             <h3 class="font-black text-xl text-orange-500 flex items-center"><i class="fas fa-sun text-2xl mr-3"></i> Sore Hari</h3>
                             <span class="bg-orange-100 text-orange-700 font-bold px-3 py-1 rounded-full text-xs">16:00 - 17:30</span>
                         </div>
-                        <ul class="space-y-4">
-                            <li class="flex items-start group cursor-pointer">
-                                <input type="checkbox" class="mt-1 w-6 h-6 text-brand-500 bg-gray-100 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
-                                <span class="ml-3 text-gray-700 font-semibold group-hover:text-brand-600 transition">Siram Bayam dan cabut rumput liar</span>
-                            </li>
-                            <li class="flex items-start group cursor-pointer">
-                                <input type="checkbox" class="mt-1 w-6 h-6 text-brand-500 bg-gray-100 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
-                                <span class="ml-3 text-gray-700 font-semibold group-hover:text-brand-600 transition">Cek ulat di balik daun Tomat 🐛</span>
-                            </li>
+                        <ul id="sore-list" class="space-y-4">
+                            <li class="text-center text-gray-400 text-sm font-semibold py-4">Memuat jadwal...</li>
                         </ul>
                     </div>
 
-                    <!-- Panen -->
-                    <div class="bg-yellow-400 p-6 rounded-3xl shadow-md border-4 border-yellow-500 relative overflow-hidden">
+                    <!-- Box Panen -->
+                    <div class="bg-yellow-400 p-6 rounded-3xl shadow-md border-4 border-yellow-500 relative overflow-hidden flex flex-col h-full">
                         <div class="absolute -right-4 -bottom-4 text-6xl opacity-30">🧺</div>
                         <div class="flex items-center justify-between mb-5 relative z-10">
                             <h3 class="font-black text-xl text-gray-900 flex items-center"><i class="fas fa-basket-shopping text-2xl mr-3"></i> Menuju Panen</h3>
-                            <span class="bg-white text-yellow-600 font-black px-3 py-1 rounded-full text-xs animate-pulse shadow-sm">H-3 !!</span>
                         </div>
-                        <div class="bg-white p-5 rounded-2xl relative z-10 border-2 border-yellow-100 shadow-sm">
-                            <p class="font-black text-gray-800 text-xl mb-1">Tomat Buah 🍅</p>
-                            <p class="text-sm text-gray-500 font-bold mb-4">Tanam: 10 Maret 2026</p>
-                            
-                            <!-- Progress Bar -->
-                            <div class="w-full bg-gray-100 rounded-full h-3 mb-2 shadow-inner border border-gray-200">
-                                <div class="bg-brand-500 h-3 rounded-full" style="width: 90%"></div>
-                            </div>
-                            <p class="text-xs text-right font-black text-brand-600">Siapkan keranjang, Ibu!</p>
+                        <div id="harvest-list" class="relative z-10 space-y-4 overflow-y-auto max-h-64 flex-1">
+                            <p class="text-center text-yellow-800 text-sm font-bold mt-10 opacity-70">Belum ada jadwal panen tersimpan.</p>
                         </div>
                     </div>
 
@@ -395,16 +355,35 @@
         </div>
     </section>
 
-    <!-- The Modal (Detail Panduan) -->
+    <!-- Modal Tambah Task Baru -->
+    <div id="addTaskModal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeTaskModal()"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-white p-8 rounded-3xl w-full max-w-md pointer-events-auto border-4 border-white shadow-2xl transform scale-95 transition-transform duration-300" id="taskModalBox">
+                <h3 class="text-3xl font-black mb-2 text-gray-900">Jadwal Baru</h3>
+                <p class="text-gray-500 font-semibold mb-6">Apa yang harus Ibu lakukan?</p>
+                
+                <input type="text" id="newTaskInput" placeholder="Contoh: Siram tomat pot biru..." class="w-full p-4 bg-gray-50 border-2 border-gray-100 focus:border-brand-500 rounded-2xl mb-4 font-bold text-gray-700 outline-none transition-all focus:ring-4 focus:ring-brand-100">
+                
+                <select id="newTaskTime" class="w-full p-4 bg-gray-50 border-2 border-gray-100 focus:border-brand-500 rounded-2xl mb-6 font-bold text-gray-700 outline-none cursor-pointer">
+                    <option value="pagi">Pagi Hari (06:00 - 08:00)</option>
+                    <option value="sore">Sore Hari (16:00 - 17:30)</option>
+                </select>
+                
+                <div class="flex justify-end gap-3">
+                    <button onclick="closeTaskModal()" class="px-6 py-3 text-gray-500 hover:text-gray-700 font-black hover:bg-gray-100 rounded-xl transition">Batal</button>
+                    <button onclick="saveNewTask()" id="btn-simpan-task" class="btn-3d px-8 py-3 bg-brand-500 hover:bg-brand-600 text-white font-black rounded-xl shadow-[0_4px_0_#15803d] border-2 border-brand-600 transition">Simpan Jadwal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal (Detail Panduan Sayuran) -->
     <div id="plantModal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300">
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closePlantModal()"></div>
-        
-        <!-- Modal Content Container -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closePlantModal()"></div>
         <div class="absolute inset-0 flex items-center justify-center p-4 sm:p-6 pointer-events-none">
             <div id="modalBox" class="bg-white w-full max-w-4xl rounded-[2.5rem] shadow-2xl pointer-events-auto transform scale-95 transition-transform duration-300 overflow-hidden flex flex-col md:flex-row max-h-[90vh] border-4 border-white">
                 
-                <!-- Left: Header Image -->
                 <div class="md:w-2/5 h-56 md:h-auto relative">
                     <img id="m-img" src="" alt="Plant" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent md:hidden"></div>
@@ -412,14 +391,12 @@
                         <span id="m-icon-mobile" class="text-3xl drop-shadow-md"></span>
                         <h2 id="m-title-mobile" class="text-3xl font-black drop-shadow-md"></h2>
                     </div>
-                    <!-- Close button mobile -->
                     <button onclick="closePlantModal()" class="absolute top-4 right-4 md:hidden bg-white/30 backdrop-blur-md text-white p-2 w-10 h-10 flex items-center justify-center rounded-full border border-white/50">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
 
-                <!-- Right: Content Details -->
-                <div class="md:w-3/5 p-6 md:p-8 overflow-y-auto flex-1 bg-gray-50/50">
+                <div class="md:w-3/5 p-6 md:p-8 overflow-y-auto flex-1 bg-gray-50/50 relative">
                     <div class="hidden md:flex justify-between items-start mb-6">
                         <div class="flex items-center gap-4">
                             <div class="bg-white p-4 rounded-3xl text-3xl shadow-sm border border-gray-100" id="m-icon"></div>
@@ -433,7 +410,6 @@
                         </button>
                     </div>
 
-                    <!-- Perawatan Grid -->
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="bg-blue-100/50 border-2 border-blue-200 p-4 rounded-2xl">
                             <div class="text-blue-600 font-black text-sm mb-2 flex items-center"><div class="bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center mr-2 text-xs"><i class="fas fa-tint"></i></div> Siram</div>
@@ -445,11 +421,9 @@
                         </div>
                     </div>
 
-                    <!-- Hama Section -->
                     <div class="mb-6">
                         <h3 class="font-black text-gray-900 mb-3 flex items-center text-lg">
-                            <span class="bg-red-500 text-white w-8 h-8 rounded-xl flex items-center justify-center mr-3 shadow-sm"><i class="fas fa-bug"></i></span> 
-                            Waspada Hama
+                            <span class="bg-red-500 text-white w-8 h-8 rounded-xl flex items-center justify-center mr-3 shadow-sm"><i class="fas fa-bug"></i></span> Waspada Hama
                         </h3>
                         <div class="bg-white border-l-4 border-red-500 p-4 rounded-xl shadow-sm">
                             <p class="font-black text-red-600 mb-1" id="m-pest-name"></p>
@@ -459,33 +433,31 @@
                         </div>
                     </div>
 
-                    <!-- Pengolahan Section -->
                     <div class="mb-8">
                         <h3 class="font-black text-gray-900 mb-3 flex items-center text-lg">
-                            <span class="bg-yellow-400 text-gray-900 w-8 h-8 rounded-xl flex items-center justify-center mr-3 shadow-sm"><i class="fas fa-utensils"></i></span> 
-                            Ide Masakan
+                            <span class="bg-yellow-400 text-gray-900 w-8 h-8 rounded-xl flex items-center justify-center mr-3 shadow-sm"><i class="fas fa-utensils"></i></span> Ide Masakan
                         </h3>
                         <p class="text-sm text-gray-700 bg-white border-2 border-yellow-100 p-4 rounded-xl font-semibold leading-relaxed shadow-sm" id="m-cook"></p>
                     </div>
 
-                    <!-- Smart Harvest Calculator -->
+                    <!-- Smart Harvest Calculator with Save Database Button -->
                     <div class="bg-brand-500 text-white p-6 rounded-[2rem] relative overflow-hidden shadow-lg border-4 border-brand-400">
                         <i class="fas fa-calendar-alt absolute -bottom-6 -right-6 text-brand-600 text-8xl opacity-50 transform -rotate-12"></i>
                         <div class="relative z-10">
                             <div class="flex justify-between items-center mb-4">
-                                <h3 class="font-black text-white flex items-center text-xl">
-                                    Kalkulator Panen
-                                </h3>
+                                <h3 class="font-black text-white flex items-center text-xl">Kalkulator Panen</h3>
                                 <span class="bg-white text-brand-600 px-3 py-1 rounded-full text-sm font-black shadow-sm" id="m-harvest-time"></span>
                             </div>
                             
                             <label class="block text-sm font-bold text-brand-50 mb-2">Pilih Tanggal Tanam Ibu:</label>
                             <input type="date" id="plant-date" class="w-full p-4 bg-white rounded-2xl border-none focus:ring-4 focus:ring-yellow-400 outline-none transition-all mb-4 font-bold text-gray-800 cursor-pointer shadow-inner">
                             
-                            <!-- Result Box -->
                             <div id="harvest-result" class="hidden bg-white shadow-xl p-5 rounded-2xl text-center animate-[bounce_0.5s_ease-in-out] transform transition">
                                 <p class="text-sm font-bold text-gray-500 mb-1 uppercase tracking-wider">Hore! Ibu bisa panen pada:</p>
-                                <p class="text-2xl font-black text-brand-600" id="harvest-date-text"></p>
+                                <p class="text-2xl font-black text-brand-600 mb-4" id="harvest-date-text"></p>
+                                <button id="btn-simpan-panen" onclick="saveHarvestToDb()" class="btn-3d w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-black py-3 rounded-xl shadow-[0_4px_0_#ca8a04] border-2 border-yellow-500 transition flex items-center justify-center">
+                                    <i class="fas fa-save mr-2"></i> Simpan ke Jadwal
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -495,104 +467,267 @@
         </div>
     </div>
 
-    <!-- JavaScript Data & Logic -->
-    <script>
-        // Data Sayuran
+    <!-- MAIN LOGIC & FIREBASE INTEGRATION -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, updateDoc, deleteDoc, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // DATA SAYURAN
         const plants = {
-            cabai: {
-                name: "Cabai Rawit",
-                icon: "🌶️",
-                img: "https://images.unsplash.com/photo-1588252303782-cb80119baade?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                water: "1x sehari, hindari genangan air di pot agar akar tidak busuk.",
-                sun: "Matahari penuh (minimal 6-8 jam sehari).",
-                pestName: "Kutu Putih & Kutu Kebul",
-                pestSol: "Semprotkan 1 sdt sabun cuci piring + 1 liter air ke bawah daun tiap sore.",
-                cook: "Buat sambal korek, sambal bawang awet di botol, atau keringkan jadi bon cabe rumahan.",
-                harvestDays: "Panen: 85 Hari",
-                harvestVal: 85
-            },
-            tomat: {
-                name: "Tomat Buah",
-                icon: "🍅",
-                img: "https://images.unsplash.com/photo-1592841200221-a6898f307baa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                water: "Siram di pangkal batang tiap hari. Jangan kenai daun untuk cegah jamur.",
-                sun: "Sinar terik seharian agar buah cepat matang dan merah.",
-                pestName: "Lalat Buah",
-                pestSol: "Bungkus buah dengan plastik berlubang kecil saat mulai membesar.",
-                cook: "Campuran sup, salad segar, atau direbus & diblender jadi saus tomat tanpa pengawet.",
-                harvestDays: "Panen: 70 Hari",
-                harvestVal: 70
-            },
-            sawi: {
-                name: "Sawi Hijau",
-                icon: "🥬",
-                img: "https://images.unsplash.com/photo-1620601931608-d2222a00c8e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                water: "2x sehari (pagi & sore). Sangat suka tanah yang lembap.",
-                sun: "Cahaya sedang, sangat bagus jika pakai paranet tipis.",
-                pestName: "Ulat Daun Hijau",
-                pestSol: "Ambil manual tiap pagi. Jika banyak, semprot air rendaman bawang putih.",
-                cook: "Ditulis bawang putih, campuran mie instan, atau kuah bakso buatan sendiri.",
-                harvestDays: "Panen: 30 Hari",
-                harvestVal: 30
-            },
-            bayam: {
-                name: "Bayam Cabut",
-                icon: "🌱",
-                img: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                water: "2x sehari. Jika tanah kering, daun akan jadi keras dan cepat berbunga.",
-                sun: "Bisa matahari penuh atau di tempat setengah teduh.",
-                pestName: "Belalang & Ulat",
-                pestSol: "Siram pakai air cucian beras (leri) sebagai pupuk dan pengusir hama ringan.",
-                cook: "Sayur bening pakai jagung manis, atau daun lebarnya dibikin keripik bayam krispi.",
-                harvestDays: "Panen: 25 Hari",
-                harvestVal: 25
+            cabai: { id: "cabai", name: "Cabai Rawit", icon: "🌶️", img: "https://images.unsplash.com/photo-1588252303782-cb80119baade?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", water: "1x sehari, hindari genangan air di pot agar akar tidak busuk.", sun: "Matahari penuh (minimal 6-8 jam sehari).", pestName: "Kutu Putih & Kutu Kebul", pestSol: "Semprotkan 1 sdt sabun cuci piring + 1 liter air ke bawah daun tiap sore.", cook: "Buat sambal korek, sambal bawang awet di botol, atau keringkan jadi bon cabe rumahan.", harvestDays: "Panen: 85 Hari", harvestVal: 85 },
+            tomat: { id: "tomat", name: "Tomat Buah", icon: "🍅", img: "https://images.unsplash.com/photo-1592841200221-a6898f307baa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", water: "Siram di pangkal batang tiap hari. Jangan kenai daun untuk cegah jamur.", sun: "Sinar terik seharian agar buah cepat matang dan merah.", pestName: "Lalat Buah", pestSol: "Bungkus buah dengan plastik berlubang kecil saat mulai membesar.", cook: "Campuran sup, salad segar, atau direbus & diblender jadi saus tomat tanpa pengawet.", harvestDays: "Panen: 70 Hari", harvestVal: 70 },
+            sawi: { id: "sawi", name: "Sawi Hijau", icon: "🥬", img: "https://images.unsplash.com/photo-1620601931608-d2222a00c8e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", water: "2x sehari (pagi & sore). Sangat suka tanah yang lembap.", sun: "Cahaya sedang, sangat bagus jika pakai paranet tipis.", pestName: "Ulat Daun Hijau", pestSol: "Ambil manual tiap pagi. Jika banyak, semprot air rendaman bawang putih.", cook: "Ditulis bawang putih, campuran mie instan, atau kuah bakso buatan sendiri.", harvestDays: "Panen: 30 Hari", harvestVal: 30 },
+            bayam: { id: "bayam", name: "Bayam Cabut", icon: "🌱", img: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", water: "2x sehari. Jika tanah kering, daun akan jadi keras dan cepat berbunga.", sun: "Bisa matahari penuh atau di tempat setengah teduh.", pestName: "Belalang & Ulat", pestSol: "Siram pakai air cucian beras (leri) sebagai pupuk dan pengusir hama ringan.", cook: "Sayur bening pakai jagung manis, atau daun lebarnya dibikin keripik bayam krispi.", harvestDays: "Panen: 25 Hari", harvestVal: 25 }
+        };
+
+        // FIREBASE SETUP
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'kebun-ibu-app';
+        let currentUserId = null;
+        let unsubscribeTasks = null;
+        let unsubscribeHarvests = null;
+
+        // AUTHENTICATION
+        const initAuth = async () => {
+            try {
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Auth error:", error);
+            }
+        };
+        initAuth();
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                currentUserId = user.uid;
+                subscribeToTasks();
+                subscribeToHarvests();
+            } else {
+                currentUserId = null;
+                if (unsubscribeTasks) unsubscribeTasks();
+                if (unsubscribeHarvests) unsubscribeHarvests();
+            }
+        });
+
+        // ================= DATABASE LISTENER: TASKS =================
+        function subscribeToTasks() {
+            if (!currentUserId) return;
+            const tasksRef = collection(db, 'artifacts', appId, 'users', currentUserId, 'tasks');
+            
+            unsubscribeTasks = onSnapshot(tasksRef, (snapshot) => {
+                const tasks = [];
+                snapshot.forEach(doc => tasks.push({ id: doc.id, ...doc.data() }));
+                
+                // Sort by creation time
+                tasks.sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
+                
+                const pagiTasks = tasks.filter(t => t.time === 'pagi');
+                const soreTasks = tasks.filter(t => t.time === 'sore');
+                
+                renderTaskList('pagi-list', pagiTasks);
+                renderTaskList('sore-list', soreTasks);
+            }, (error) => console.error("Error fetching tasks:", error));
+        }
+
+        function renderTaskList(elementId, tasks) {
+            const listEl = document.getElementById(elementId);
+            listEl.innerHTML = '';
+            
+            if(tasks.length === 0) {
+                listEl.innerHTML = `<li class="text-center text-gray-400 text-sm font-semibold py-4 border-2 border-dashed border-gray-100 rounded-xl">Belum ada jadwal.</li>`;
+                return;
+            }
+
+            tasks.forEach(task => {
+                const li = document.createElement('li');
+                li.className = "flex items-start group justify-between hover:bg-gray-50 p-2 rounded-xl transition-all -mx-2";
+                li.innerHTML = `
+                    <div class="flex items-start cursor-pointer flex-1" onclick="window.toggleTask('${task.id}', ${task.completed})">
+                        <input type="checkbox" class="mt-1 w-6 h-6 text-brand-500 bg-gray-100 border-gray-300 rounded focus:ring-brand-500 cursor-pointer pointer-events-none" ${task.completed ? 'checked' : ''}>
+                        <span class="ml-3 text-gray-700 font-semibold group-hover:text-brand-600 transition ${task.completed ? 'line-through text-gray-400' : ''}">${task.title}</span>
+                    </div>
+                    <button onclick="window.deleteTask('${task.id}')" class="text-red-300 hover:text-red-600 p-1 opacity-0 group-hover:opacity-100 transition transform hover:scale-110"><i class="fas fa-trash"></i></button>
+                `;
+                listEl.appendChild(li);
+            });
+        }
+
+        // ================= DATABASE LISTENER: HARVESTS =================
+        function subscribeToHarvests() {
+            if (!currentUserId) return;
+            const harvestRef = collection(db, 'artifacts', appId, 'users', currentUserId, 'harvests');
+            
+            unsubscribeHarvests = onSnapshot(harvestRef, (snapshot) => {
+                const harvests = [];
+                snapshot.forEach(doc => harvests.push({ id: doc.id, ...doc.data() }));
+                
+                // Sort by closest harvest date
+                harvests.sort((a, b) => new Date(a.dateObj) - new Date(b.dateObj));
+                renderHarvests(harvests);
+            }, (error) => console.error("Error fetching harvests:", error));
+        }
+
+        function renderHarvests(harvests) {
+            const listEl = document.getElementById('harvest-list');
+            listEl.innerHTML = '';
+
+            if(harvests.length === 0) {
+                listEl.innerHTML = `<p class="text-center text-yellow-800 text-sm font-bold mt-10 opacity-70">Belum ada jadwal panen tersimpan.</p>`;
+                return;
+            }
+
+            harvests.forEach(h => {
+                const div = document.createElement('div');
+                div.className = "bg-white p-4 rounded-2xl relative z-10 border-2 border-yellow-100 shadow-sm mb-3 group";
+                div.innerHTML = `
+                    <button onclick="window.deleteHarvest('${h.id}')" class="absolute top-2 right-2 text-red-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition"><i class="fas fa-times-circle"></i></button>
+                    <p class="font-black text-gray-800 text-lg mb-1">${h.plantName} ${h.icon}</p>
+                    <p class="text-xs text-gray-500 font-bold mb-3 uppercase tracking-wider">Tanam: ${h.plantedStr}</p>
+                    <div class="bg-yellow-50 rounded-xl p-3 border border-yellow-200 text-center">
+                        <span class="block text-xs font-bold text-yellow-600 mb-1">Target Panen:</span>
+                        <span class="block font-black text-brand-600">${h.harvestStr}</span>
+                    </div>
+                `;
+                listEl.appendChild(div);
+            });
+        }
+
+        // ================= CRUD FUNCTIONS (Terkoneksi UI) =================
+        window.saveNewTask = async () => {
+            if(!currentUserId) return;
+            const input = document.getElementById('newTaskInput');
+            const timeSelect = document.getElementById('newTaskTime');
+            const btn = document.getElementById('btn-simpan-task');
+            
+            if(!input.value.trim()) return;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menyimpan...';
+
+            try {
+                await addDoc(collection(db, 'artifacts', appId, 'users', currentUserId, 'tasks'), {
+                    title: input.value.trim(),
+                    time: timeSelect.value,
+                    completed: false,
+                    createdAt: Date.now()
+                });
+                window.closeTaskModal();
+                input.value = ''; // Reset
+            } catch (error) {
+                console.error("Gagal simpan task:", error);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = 'Simpan Jadwal';
             }
         };
 
-        let currentHarvestDays = 0;
+        window.toggleTask = async (taskId, currentState) => {
+            if(!currentUserId) return;
+            try {
+                await updateDoc(doc(db, 'artifacts', appId, 'users', currentUserId, 'tasks', taskId), {
+                    completed: !currentState
+                });
+            } catch (error) {
+                console.error("Gagal update task:", error);
+            }
+        };
 
-        // Loading Screen Logic
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const loader = document.getElementById('loader');
-                loader.classList.remove('opacity-100');
-                loader.classList.add('opacity-0');
+        window.deleteTask = async (taskId) => {
+            if(!currentUserId) return;
+            try {
+                await deleteDoc(doc(db, 'artifacts', appId, 'users', currentUserId, 'tasks', taskId));
+            } catch (error) {
+                console.error("Gagal hapus task:", error);
+            }
+        };
+
+        window.saveHarvestToDb = async () => {
+            if(!currentUserId || !window.currentActivePlant || !window.calculatedHarvestDate) return;
+            
+            const btn = document.getElementById('btn-simpan-panen');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Menyimpan...';
+
+            const data = plants[window.currentActivePlant];
+            try {
+                await addDoc(collection(db, 'artifacts', appId, 'users', currentUserId, 'harvests'), {
+                    plantId: data.id,
+                    plantName: data.name,
+                    icon: data.icon,
+                    plantedStr: window.selectedPlantedDate, // Tgl Tanam
+                    harvestStr: window.calculatedHarvestDate, // Tgl Panen (Format Lokal)
+                    dateObj: window.calculatedDateRaw, // Untuk sorting
+                    createdAt: Date.now()
+                });
+                
+                // Visual feedback success
+                btn.classList.replace('bg-yellow-400', 'bg-brand-500');
+                btn.classList.replace('text-gray-900', 'text-white');
+                btn.innerHTML = '<i class="fas fa-check mr-2"></i> Tersimpan di Jadwal!';
+                
                 setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 700);
-            }, 2000); 
-        });
+                    window.closePlantModal();
+                }, 1500);
 
-        // Modal Logic
+            } catch (error) {
+                console.error("Gagal simpan panen:", error);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i> Gagal Menyimpan';
+            }
+        };
+
+        window.deleteHarvest = async (harvestId) => {
+            if(!currentUserId) return;
+            try {
+                await deleteDoc(doc(db, 'artifacts', appId, 'users', currentUserId, 'harvests', harvestId));
+            } catch (error) {
+                console.error("Gagal hapus panen:", error);
+            }
+        };
+
+        // ================= UI MODAL LOGIC =================
+        let currentHarvestDays = 0;
         const modal = document.getElementById('plantModal');
         const modalBox = document.getElementById('modalBox');
+        const taskModal = document.getElementById('addTaskModal');
+        const taskModalBox = document.getElementById('taskModalBox');
 
-        function openPlantModal(plantId) {
+        window.openPlantModal = (plantId) => {
             const data = plants[plantId];
             if(!data) return;
 
-            // Isi Data
+            window.currentActivePlant = plantId; // Simpan context untuk tombol Save
+            
             document.getElementById('m-title').textContent = data.name;
             document.getElementById('m-title-mobile').textContent = data.name;
             document.getElementById('m-icon').textContent = data.icon;
             document.getElementById('m-icon-mobile').textContent = data.icon;
             document.getElementById('m-img').src = data.img;
-            
             document.getElementById('m-water').textContent = data.water;
             document.getElementById('m-sun').textContent = data.sun;
             document.getElementById('m-pest-name').textContent = data.pestName;
             document.getElementById('m-pest-solution').textContent = data.pestSol;
             document.getElementById('m-cook').textContent = data.cook;
             
-            // Set up calculator
             currentHarvestDays = data.harvestVal;
             document.getElementById('m-harvest-time').textContent = data.harvestDays;
             
-            // Reset input
             document.getElementById('plant-date').value = '';
             document.getElementById('harvest-result').classList.add('hidden');
+            
+            // Reset Button State
+            const btn = document.getElementById('btn-simpan-panen');
+            btn.disabled = false;
+            btn.className = "btn-3d w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-black py-3 rounded-xl shadow-[0_4px_0_#ca8a04] border-2 border-yellow-500 transition flex items-center justify-center";
+            btn.innerHTML = '<i class="fas fa-save mr-2"></i> Simpan ke Jadwal';
 
-            // Tampilkan Modal
             modal.classList.remove('hidden');
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
@@ -600,39 +735,67 @@
                 modalBox.classList.remove('scale-95');
                 modalBox.classList.add('scale-100');
             }, 10);
-        }
+        };
 
-        function closePlantModal() {
+        window.closePlantModal = () => {
             modal.classList.remove('opacity-100');
             modal.classList.add('opacity-0');
             modalBox.classList.remove('scale-100');
             modalBox.classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
-        }
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        };
 
-        // Event Listener untuk Kalkulator Panen
+        window.openTaskModal = () => {
+            taskModal.classList.remove('hidden');
+            setTimeout(() => {
+                taskModal.classList.remove('opacity-0');
+                taskModal.classList.add('opacity-100');
+                taskModalBox.classList.remove('scale-95');
+                taskModalBox.classList.add('scale-100');
+            }, 10);
+        };
+
+        window.closeTaskModal = () => {
+            taskModal.classList.remove('opacity-100');
+            taskModal.classList.add('opacity-0');
+            taskModalBox.classList.remove('scale-100');
+            taskModalBox.classList.add('scale-95');
+            setTimeout(() => taskModal.classList.add('hidden'), 300);
+        };
+
+        // Kalkulator Panen Listener
         document.getElementById('plant-date').addEventListener('change', function(e) {
             const selectedDate = e.target.value;
             if(!selectedDate) return;
 
-            const date = new Date(selectedDate);
-            date.setDate(date.getDate() + currentHarvestDays);
+            const startDateObj = new Date(selectedDate);
+            const harvestDateObj = new Date(selectedDate);
+            harvestDateObj.setDate(harvestDateObj.getDate() + currentHarvestDays);
 
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const formattedDate = date.toLocaleDateString('id-ID', options);
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            const fullOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            
+            window.selectedPlantedDate = startDateObj.toLocaleDateString('id-ID', options);
+            window.calculatedHarvestDate = harvestDateObj.toLocaleDateString('id-ID', fullOptions);
+            window.calculatedDateRaw = harvestDateObj.toISOString();
 
             const resultBox = document.getElementById('harvest-result');
-            document.getElementById('harvest-date-text').textContent = formattedDate;
+            document.getElementById('harvest-date-text').textContent = window.calculatedHarvestDate;
             
             resultBox.classList.remove('hidden');
-            
-            // Bounce animation re-trigger
             resultBox.style.animation = 'none';
             resultBox.offsetHeight; 
             resultBox.style.animation = null; 
+        });
+
+        // Hapus loader saat siap
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loader');
+                loader.classList.remove('opacity-100');
+                loader.classList.add('opacity-0');
+                setTimeout(() => loader.style.display = 'none', 700);
+            }, 2500); 
         });
     </script>
 </body>
